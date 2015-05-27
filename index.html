@@ -3,12 +3,27 @@
 <head>
 	<title>SoundCloud Player</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body ng-controller="MainController">
-
+	<div class="row">
+		<form class="col s12" ng-submit="getUser(searchText)">
+			<div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Search for artists" id="name" type="text" ng-model="searchText">
+          <div ng-bind-html="player_html"></div>
+        </div>		  
+			</div>  
+		</form>
+	</div>
+	<div class="inline-block pointer" ng-repeat="songs in userData">
+		<img ng-src="{{songs.artwork_url}}" ng-click="play(songs.permalink_url)"> 
+	</div>
+</body>	
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.js"></script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
 <script type="text/javascript" src="/js/mainService.js"></script>
 <script type="text/javascript" src="/js/mainController.js"></script>
