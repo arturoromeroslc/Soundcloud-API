@@ -19,26 +19,18 @@
 	    </div>
 	  </nav>
   </div>
+
   <div ng-bind-html="player_html"></div>
 	<div class="container">
-		<div class="inline-block pointer margin-half-em waves-effect waves-block waves-light" ng-repeat="songs in userData">
+		<!-- <div class=" inline-block pointer margin-half-em waves-effect waves-block waves-light" ng-repeat="songs in userData">
 			<img ng-src="{{songs.artwork_url}}" ng-click="play(songs.permalink_url)"> 
 		</div>
-	</div>
+	</div> -->
 
-		<!-- <div class="card inline-block" ng-repeat="songs in userData">
-        <div class="card-image waves-effect waves-block waves-light">
+		<div class="card inline-block" ng-repeat="songs in userData">
+        <div class="z-depth-3 card-image waves-effect waves-block waves-light">
           <img class="activator" ng-src="{{songs.artwork_url}}" ng-click="play(songs.permalink_url)">
-        </div> -->
-        <!-- <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="#">This is a link</a></p>
-        </div> -->
-       <!--  <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
         </div>
-      </div> -->
 
 
 
