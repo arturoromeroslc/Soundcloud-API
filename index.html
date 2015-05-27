@@ -19,23 +19,15 @@
 	    </div>
 	  </nav>
   </div>
-
   <div ng-bind-html="player_html"></div>
-	<div class="container">
-		<!-- <div class=" inline-block pointer margin-half-em waves-effect waves-block waves-light" ng-repeat="songs in userData">
-			<img ng-src="{{songs.artwork_url}}" ng-click="play(songs.permalink_url)"> 
-		</div>
-	</div> -->
-
-		<div class="card inline-block" ng-repeat="songs in userData">
+		<div class="container">
+			<div class="card inline-block" ng-repeat="songs in userData">
         <div class="z-depth-3 card-image waves-effect waves-block waves-light">
           <img class="activator" ng-src="{{songs.artwork_url}}" ng-click="play(songs.permalink_url)">
         </div>
-
-
-
-
-</body>	
+      </div>
+    </div>
+  </div>        
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.js"></script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
