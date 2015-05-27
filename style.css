@@ -1,0 +1,9 @@
+.inline-block {
+	display: inline-block;
+}
+.pointer {
+	cursor: pointer;
+}
+.margin-half-em {
+	margin: 0 .1px;
+}

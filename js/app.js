@@ -1,2 +1,2 @@
 angular
-	.module('SoundCloudApp', []);
+	.module('SoundCloudApp', [])
