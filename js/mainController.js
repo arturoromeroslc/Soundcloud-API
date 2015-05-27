@@ -1,9 +1,9 @@
 angular
 	.module('SoundCloudApp')
 	.controller('MainController', function($scope, $log, MainService) {
-		function getUser() {
-			MainService.getUsers();
-		} 
+		$scope.getUser = function(userName) {
+			MainService.getUsers(userName);
+		}
 
-		getUser()
+		$scope.getUser('lifeplus')
 	})
